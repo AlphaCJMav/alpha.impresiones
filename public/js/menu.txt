@@ -1,0 +1,42 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".menu-item");
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function (event) {
+      event.stopPropagation(); // Evitar que el clic se propague
+      event.preventDefault(); // Prevenir comportamiento predeterminado del enlace
+
+      const submenu = item.querySelector(".submenu");
+
+      if (submenu) {
+        const isVisible = submenu.classList.contains("show");
+
+        // Cerrar todos los submenús antes de abrir el actual
+        document.querySelectorAll(".submenu").forEach((sm) => {
+          sm.classList.remove("show");
+        });
+
+        // Alternar visibilidad del submenú actual
+        if (!isVisible) {
+          submenu.classList.add("show");
+        }
+      }
+    });
+  });
+
+  // Evitar que el clic en los enlaces dentro de los submenús cierre el menú
+  const submenuLinks = document.querySelectorAll(".submenu a");
+  submenuLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.stopPropagation(); // Evitar que el evento suba al menú
+      // El enlace se comporta normalmente, llevando al destino
+    });
+  });
+
+  // Cerrar submenús al hacer clic fuera del menú
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".submenu").forEach((submenu) => {
+      submenu.classList.remove("show");
+    });
+  });
+});

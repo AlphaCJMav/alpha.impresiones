@@ -1,0 +1,81 @@
+baseURL = 'https://example.org/'
+googleAnalytics = ""
+theme = "hyde"
+languageCode = 'es'
+title = 'Alpha Impresiones'
+[params]
+description = "Portfolio Impresiones 3D"
+logo = "/imagen/logo/logo.png"
+gif = "/imagen/logo/3d.webp"
+
+[menu]
+
+[[menu.main]]
+  identifier = "contacto"
+  name = "Contacto"
+  title = "Contacto"
+  url = "/contacto/"
+  weight = 0
+
+[[menu.main]]
+  parent = "Modelos de Llaveros"
+  identifier = "disney-moment"
+  name = "Disney Moment"
+  title = "Disney Moment"
+  url = "/llaveros/disney/"
+  weight = 1
+
+[[menu.main]]
+  parent = "Modelos de Llaveros"
+  identifier = "flork"
+  name = "FLORK"
+  title = "FLORK"
+  url = "/llaveros/flork/"
+  weight = 2
+
+[[menu.main]]
+  parent = "Modelos de Llaveros"
+  identifier = "mario"
+  name = "Mario World"
+  title = "Mario World"
+  url = "/llaveros/mario"
+  weight = 3
+
+[[menu.main]]
+  parent = "Modelos de Llaveros"
+  identifier = "mickey"
+  name = "Mickey"
+  title = "Mickey"
+  url = "/llaveros/mickey"
+  weight = 4
+
+[[menu.main]]
+  parent = "Modelos de Llaveros"
+  identifier = "minecraft"
+  name = "Minecraft"
+  title = "Minecraft"
+  url = "/llaveros/minecraft"
+  weight = 5
+
+[[menu.main]]
+  parent = "Modelos de Llaveros"
+  identifier = "minions"
+  name = "Minions"
+  title = "Minions"
+  url = "/llaveros/minion"
+  weight = 6
+
+[[menu.main]]
+  parent = "Clubes Futbol"
+  identifier = "clubes"
+  name = "Clubes "
+  title = "Clubes"
+  url = "/llaveros/clubes"
+  weight = 7
+
+[[menu.main]]
+  identifier = "fotos"
+  name = "PEDIDOS de Clientes"
+  title = "fotos"
+  url = "/fotos"
+  weight = 8
