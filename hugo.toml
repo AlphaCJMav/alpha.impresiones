@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://alpha.impresiones/'
 googleAnalytics = ""
 theme = "hyde"
 languageCode = 'es'
