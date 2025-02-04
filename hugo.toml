@@ -1,6 +1,6 @@
 baseURL = 'https://alpha.impresiones/'
 googleAnalytics = ""
-theme = "hyde"
+theme = "alpha-theme"
 languageCode = 'es'
 title = 'Alpha Impresiones'
 [params]
