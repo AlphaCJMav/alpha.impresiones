@@ -1,0 +1,3 @@
+[submodule "themes/alpha-theme"]
+path = themes/alpha-theme
+url = https://github.com/AlphaCJMav/alpha-theme.git
