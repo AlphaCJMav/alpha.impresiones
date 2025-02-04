@@ -1,0 +1,150 @@
+body {
+    background-image: url('/imagen/fondo/body.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+/* Crea una capa de fondo semitransparente sin afectar el contenido */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Color oscuro con opacidad */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Hereda la imagen de fondo */
+    filter: blur(10px); /* Aplica el desenfoque */
+    z-index: -2; /* Asegura que el fondo desenfocado quede debajo del color */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+.sidebar-logo img {
+  margin-bottom: 20px;  /* Espacio debajo del logo */
+  display: block;  /* Asegura que se vea como un bloque */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Establecer la imagen de fondo para el sidebar */
+.sidebar {
+  background-image: url('/imagen/fondo/sidebar.png');  /* Ruta de tu imagen en static */
+  background-size: cover;                          /* Hace que la imagen cubra todo el espacio */
+  background-position: center center;               /* Centra la imagen */
+  background-repeat: no-repeat;                     /* Evita que la imagen se repita */
+  padding: 20px;                                    /* Puedes ajustar el padding si es necesario */
+}
+
+.sidebar a{
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    display: flex;
+    align-items: center;
+}
+.sidebar a:hover {
+  transform: scale(1.1);
+}
+.sidebar-about h1{
+    font-size: 2.5rem;
+}
+.whatsapp-icon {
+    width: 5%;
+    height: 5%;
+  margin-left: 10px; /* Espacio entre el texto y el ícono */
+  display: flex;
+  align-items: center;
+}
+.post{
+    color: aliceblue;
+}
+.post-date{
+    color: aliceblue;
+}
+.post h1{
+    color: antiquewhite;
+}
+.post h2{
+    background-color: silver;
+    color: dodgerblue;
+    margin-left: 20px;
+}
+.post p {
+    color: aliceblue;
+}
+.post strong {
+    color: azure;
+}
+
+/* Asegurarse de que las imágenes sean responsivas */
+.img-fluid {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Efecto de agrandado al pasar el mouse */
+.img-fluid:hover {
+  transform: scale(1.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cuadricula-imagenes {
+  display: flex; /* Establecer el contenedor como flex */
+}
+
+.post-title a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    display: inline-block;
+}
+
+.post-title a:hover{
+    transform: scale(1.1);
+}
+
+.imagen figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+
+/* Submenú general */
+.submenu {
+  display: none; /* Ocultar inicialmente */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: relative; /* Permitir que floten dentro del contenedor */
+  top: 0; /* Asegurar alineación vertical */
+  padding: 0.5rem;
+  z-index: 1000; /* Asegurar que esté por encima */
+  left: 10%;
+}
+
+/* Submenú activo */
+.submenu.show {
+  display: block;
+  opacity: 1;
+}
+
+
