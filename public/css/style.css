@@ -1,5 +1,5 @@
 body {
-    background-image: url('/imagen/fondo/body.jpg');
+    background-image: url('/alpha.impresiones/imagen/fondo/body.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ h1, h2, h3 {
 }
 /* Establecer la imagen de fondo para el sidebar */
 .sidebar {
-  background-image: url('/imagen/fondo/sidebar.png');  /* Ruta de tu imagen en static */
+  background-image: url('/alpha.impresiones/imagen/fondo/sidebar.png');  /* Ruta de tu imagen en static */
   background-size: cover;                          /* Hace que la imagen cubra todo el espacio */
   background-position: center center;               /* Centra la imagen */
   background-repeat: no-repeat;                     /* Evita que la imagen se repita */

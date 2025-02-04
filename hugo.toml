@@ -5,8 +5,8 @@ languageCode = 'es'
 title = 'Alpha Impresiones'
 [params]
 description = "Portfolio Impresiones 3D"
-logo = "/imagen/logo/logo.png"
-gif = "/imagen/logo/3d.webp"
+logo = "/alpha.impresiones/imagen/logo/logo.png"
+gif = "/alpha.impresiones/imagen/logo/3d.webp"
 
 [menu]
 

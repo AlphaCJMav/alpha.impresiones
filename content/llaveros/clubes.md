@@ -10,10 +10,10 @@ date = 2025-02-01T11:38:19-03:00
 Los Mejores llaveros de tus Clubes Favoritos.
 
 
-- ### [***Rosario Central***](/llaveros/clubes/rc) 
+- ### [***Rosario Central***](/alpha.impresiones/llaveros/clubes/rc) 
 
-- ### [***Newell's Old Boy***](/llaveros/clubes/nob)
+- ### [***Newell's Old Boy***](/alpha.impresiones/llaveros/clubes/nob)
 
-- ### [***River Plate***](/llaveros/clubes/rp)
+- ### [***River Plate***](/alpha.impresiones/llaveros/clubes/rp)
 
-- ### [***Boca Juniors***](/llaveros/clubes/boca)
+- ### [***Boca Juniors***](/alpha.impresiones/llaveros/clubes/boca)
