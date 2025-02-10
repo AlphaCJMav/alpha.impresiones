@@ -1,8 +1,10 @@
 baseURL = 'https://alphacjmav.github.io/alpha.impresiones/'
 googleAnalytics = ""
 theme = "alpha-theme"
+publishDir = "docs"
 languageCode = 'es'
 title = 'Alpha Impresiones'
+
 [params]
 description = "Portfolio Impresiones 3D"
 logo = "/alpha.impresiones/imagen/logo/logo.png"
