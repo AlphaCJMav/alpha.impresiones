@@ -1,3 +1,3 @@
-<video width="80%" height="auto" autoplay muted loop disablePictureInPicture>
-  <source src="/alpha.impresiones/imagen/{{ .Get "src" }}"  type="video/mp4">
+<video class="{{ .Get "class" }}" width="{{ .Get "width" | default "80%" }}" height="auto" autoplay muted loop disablePictureInPicture>
+  <source src="/alpha.impresiones/imagen/{{ .Get "src" }}" type="video/mp4">
 </video>
