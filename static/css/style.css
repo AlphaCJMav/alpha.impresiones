@@ -2,6 +2,7 @@ body {
     background-image: url('/alpha.impresiones/imagen/fondo/body.jpg');
     background-position: center center;
     background-size: 100% auto;
+    background-repeat: repeat;
     position: relative;
     font-family: Arial, sans-serif;
     line-height: 1.6;
