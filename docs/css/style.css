@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url('/alpha.impresiones/imagen/fondo/body.jpg');
     background-position: center center;
     background-size: 100%;
@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
 }
+*/
 /* Crea una capa de fondo semitransparente sin afectar el contenido */
 body::after {
     content: '';
