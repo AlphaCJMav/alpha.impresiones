@@ -33,6 +33,11 @@ body::before {
     z-index: -2; /* Asegura que el fondo desenfocado quede debajo del color */
 }
 
+a {
+    color: aquamarine;
+    text-decoration: none; !important;
+}
+
 h1, h2, h3 {
     color: #333;
 }
