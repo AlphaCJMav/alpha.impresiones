@@ -1,4 +1,4 @@
-/* body {
+body {
     background-image: url('/alpha.impresiones/imagen/fondo/body.jpg');
     background-position: center center;
     background-size: 100%;
@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
 }
-*/
 /* Crea una capa de fondo semitransparente sin afectar el contenido */
 body::after {
     content: '';
@@ -82,7 +81,7 @@ h1, h2, h3 {
 }
 .post h2{
     background-color: silver;
-    color: dodgerblue;
+    color: azure;
     margin-left: 20px;
 }
 .post p {
