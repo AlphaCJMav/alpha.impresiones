@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cumple 6 añitos de Dante &middot; Alpha Impresiones</title>
+  <title>Ofertas &middot; Alpha Impresiones</title>
   <meta name="description" content="" />
 
   
@@ -97,29 +97,143 @@
 </aside>
 
     <main class="content container">
-    <div class="post">
-  <h1>Cumple 6 añitos de Dante</h1>
-  <time datetime=2024-06-15T12:47:40-0300 class="post-date">Sat, Jun 15, 2024</time>
-  <p>Gracias Paola mamá de Dante por tu pedido.</p>
-<p>
-<figure class="imagen">
-  <img src="/alpha.impresiones/imagen/fotos/dante.png" alt="noel" class="img-fluid">
-  <figcaption>Feliz Cumple Dante !!!</figcaption>
-</figure>
-
-<video class="" width="80%" height="auto" autoplay muted loop disablePictureInPicture>
-  <source src="/alpha.impresiones/imagen/fotos/dante-video.mp4" type="video/mp4">
-</video>
-
-
-<figure class="imagen">
-  <img src="/alpha.impresiones/imagen/fotos/dante1.png" alt="noel" class="img-fluid">
-  <figcaption>Feliz Cumple Dante !!!</figcaption>
-</figure>
-</p>
-
+    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ofertas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/alpha.impresiones/css/shop.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div class="banner-img">
+  <a href="/alpha.impresiones/">
+  <img src="/alpha.impresiones/imagen/logo/logo.png" alt="shop" class="banner-image" style="width: 60px">
+  </a>
+  <img src="/alpha.impresiones/imagen/logo/3d.webp" alt="shop" class="banner-image" style="width: 60px">
+  <img src="/alpha.impresiones/imagen/logo/mercado-shops.png" alt="shop" class="banner-image" style="width: 100px">
 </div>
 
+<div class="banner_shop">
+  <img src="/alpha.impresiones/imagen/logo/ofertas.png" alt="shop_oferta" style="width: 80px">
+</div>
+
+<div class="category-wrapper container">
+  <a class="btn" href="/alpha.impresiones/shop/">All</a>
+  
+    <a class="btn" href="/alpha.impresiones/shop/souveniers">Souveniers</a>
+  
+    <a class="btn" href="/alpha.impresiones/shop/ofertas">Ofertas</a>
+  
+    <a class="btn" href="/alpha.impresiones/shop/decoracion">Decoración</a>
+  
+    <a class="btn" href="/alpha.impresiones/shop/figuras">Figuras</a>
+  
+</div>
+
+
+<div class="galeria" id="productos">
+  
+  
+    
+
+    <div class="card" id="producto-1493333477">
+      <p>Cargando...</p> 
+    </div>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+
+    <div class="card" id="producto-1493333477">
+      <p>Cargando...</p> 
+    </div>
+  
+    
+  
+    
+
+    <div class="card" id="producto-1493333477">
+      <p>Cargando...</p> 
+    </div>
+  
+    
+  
+    
+
+    <div class="card" id="producto-1493333477">
+      <p>Cargando...</p> 
+    </div>
+  
+    
+  
+  
+</div>
+
+<script>
+async function cargarProducto(numero) {
+  try {
+    const res = await fetch(`https://api.mercadolibre.com/items/MLA${numero}`);
+    const data = await res.json();
+
+    document.getElementById(`producto-${numero}`).innerHTML = `
+      <div class="card">
+        <img src="${data.thumbnail}" alt="${data.title}">
+        <h3>${data.title}</h3>
+        <p>Precio: $${data.price}</p>
+        <a href="${data.permalink}" target="_blank">Comprar</a>
+      </div>
+    `;
+  } catch (error) {
+    document.getElementById(`producto-${numero}`).innerHTML = `
+      <p>Error al cargar el producto.</p>
+    `;
+    console.error('Error cargando producto', numero, error);
+  }
+}
+
+function cargarTodosLosProductos() {
+  const productos = [
+    
+      "1493333477",
+    
+      "1493721639",
+    
+      "1493721568",
+    
+      "1493721568",
+    
+      "1493333477",
+    
+      "1493333477",
+    
+      "1493333477",
+    
+  ];
+
+  productos.forEach(numero => {
+    cargarProducto(numero);
+  });
+}
+
+cargarTodosLosProductos();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
 
     </main>
 

@@ -8,6 +8,9 @@ title = 'Alpha Impresiones'
 [taxonomies]
 categoria = "categorias"
 
+[server]
+watch = true
+
 
 [params]
 description = "Portfolio Impresiones 3D"
@@ -16,7 +19,22 @@ gif = "/alpha.impresiones/imagen/logo/3d.webp"
 shops = "/alpha.impresiones/imagen/logo/mercado-shops.png"
 oferta = "/alpha.impresiones/imagen/logo/ofertas.png"
 
-categoria = ["Souveniers", "Ofertas", "Decoración", "Figuras"]
+[[params.categorias]]
+  titulo = "Souveniers"
+  slug = "souveniers"
+
+[[params.categorias]]
+  titulo = "Ofertas"
+  slug = "ofertas"
+
+[[params.categorias]]
+  titulo = "Decoración"
+  slug = "decoracion"
+
+[[params.categorias]]
+  titulo = "Figuras"
+  slug = "figuras"
+
 
 
 [menu]
