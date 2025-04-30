@@ -49,11 +49,15 @@ h1, h2, h3 {
 }
 /* Establecer la imagen de fondo para el sidebar */
 .sidebar {
+    overflow: auto;
   background-image: url('/alpha.impresiones/imagen/fondo/sidebar.png');  /* Ruta de tu imagen en static */
   background-size: cover;                          /* Hace que la imagen cubra todo el espacio */
   background-position: center center;               /* Centra la imagen */
   background-repeat: no-repeat;                     /* Evita que la imagen se repita */
-  padding: 20px;                                    /* Puedes ajustar el padding si es necesario */
+  max-height: 100vh !important; /* Nunca supera el alto de la pantalla */
+  box-sizing: border-box !important; /* Se asegura que padding no sume al tamaño total */
+  padding: 1rem 1rem !important;
+
 }
 
 .sidebar a{
@@ -66,7 +70,7 @@ h1, h2, h3 {
   transform: scale(1.1);
 }
 .sidebar-about h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .whatsapp-icon {
     width: 5%;

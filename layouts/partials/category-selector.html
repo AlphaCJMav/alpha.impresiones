@@ -1,0 +1,11 @@
+<div class="category-wrapper container">
+  {{ $all := "All" }}
+  {{ range slice $all | append .Site.Params.categoria }}
+    {{ $marcaURL := . | lower | urlize }}
+    {{ $extraClass := "" }}
+        <a class="btn {{ $extraClass }}" 
+       href="{{ if eq . $all }}{{ "/alpha.impresiones/shop/" | relURL }}{{ else }}{{ "/alpha.impresiones/shop/" | relURL }}{{ $marcaURL }}{{ end }}">
+      {{ . }}
+    </a>
+  {{ end }}
+</div>

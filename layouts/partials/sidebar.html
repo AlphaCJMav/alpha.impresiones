@@ -1,5 +1,5 @@
 <aside class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container ">
         <!-- Logo en la barra lateral -->
     <div class="sidebar-logo">
       <img src="{{ .Site.Params.logo }}" alt="Logo" class="logo-sidebar" style="width: 30%; margin-top: 5px;">
@@ -10,13 +10,14 @@
          <img src="{{ .Site.Params.gif }}" alt="GIF animado" class="gif-title" style="width: 50px; height: 50px; margin-left: 10px;">
         </h1>
       </a>
-      <p class="lead">
-      {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
-      </p>
     </div>
 
     <nav>
       <ul class="sidebar-nav">
+        <li><a href="{{ "shop/" | relURL }}">
+            <img src="{{ .Site.Params.shops }}" alt="Shops" style="height: 50px;">
+            </a>
+        </li>
         <li><a href="{{ .Site.BaseURL }}">Últimos Trabajos</a></li>
         {{ range .Site.Menus.main -}}
           <li class="menu-item">

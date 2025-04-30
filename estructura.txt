@@ -1,0 +1,359 @@
+.
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+│   ├── contacto.md
+│   ├── fotos
+│   │   ├── alex.md
+│   │   ├── avon.md
+│   │   ├── baby.md
+│   │   ├── cat.md
+│   │   ├── dante.md
+│   │   ├── ducha.md
+│   │   ├── edus.md
+│   │   ├── estatuilla.md
+│   │   ├── flork.md
+│   │   ├── fotos.md
+│   │   ├── holder.md
+│   │   ├── mermai.md
+│   │   ├── navidad.md
+│   │   ├── paddle.md
+│   │   ├── river.md
+│   │   ├── stacionCelular.md
+│   │   ├── stumble.md
+│   │   └── vero.md
+│   ├── llaveros
+│   │   ├── clubes
+│   │   │   ├── boca.md
+│   │   │   ├── nob.md
+│   │   │   ├── rc.md
+│   │   │   └── rp.md
+│   │   ├── clubes.md
+│   │   ├── disney.md
+│   │   ├── flork.md
+│   │   ├── mario.md
+│   │   ├── mickey.md
+│   │   ├── minecraft.md
+│   │   └── minion.md
+│   └── shop
+│       ├── index.md
+│       └── ofertas
+│           └── index.md
+├── data
+│   └── productos.toml
+├── docs
+│   ├── 404.html
+│   ├── apple-touch-icon-144-precomposed.png
+│   ├── categorias
+│   │   ├── index.html
+│   │   └── index.xml
+│   ├── contacto
+│   │   └── index.html
+│   ├── css
+│   │   ├── hyde.css
+│   │   ├── poole.css
+│   │   ├── print.css
+│   │   ├── shop.css
+│   │   ├── style.css
+│   │   └── syntax.css
+│   ├── favicon.png
+│   ├── fotos
+│   │   ├── alex
+│   │   │   └── index.html
+│   │   ├── avon
+│   │   │   └── index.html
+│   │   ├── baby
+│   │   │   └── index.html
+│   │   ├── cat
+│   │   │   └── index.html
+│   │   ├── dante
+│   │   │   └── index.html
+│   │   ├── ducha
+│   │   │   └── index.html
+│   │   ├── edus
+│   │   │   └── index.html
+│   │   ├── estatuilla
+│   │   │   └── index.html
+│   │   ├── flork
+│   │   │   └── index.html
+│   │   ├── fotos
+│   │   │   └── index.html
+│   │   ├── holder
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   ├── mermai
+│   │   │   └── index.html
+│   │   ├── navidad
+│   │   │   └── index.html
+│   │   ├── paddle
+│   │   │   └── index.html
+│   │   ├── river
+│   │   │   └── index.html
+│   │   ├── stacioncelular
+│   │   │   └── index.html
+│   │   ├── stumble
+│   │   │   └── index.html
+│   │   └── vero
+│   │       └── index.html
+│   ├── imagen
+│   │   ├── fondo
+│   │   │   ├── body.jpg
+│   │   │   ├── fondo-shop.jpeg
+│   │   │   └── sidebar.png
+│   │   ├── fotos
+│   │   │   ├── alex.png
+│   │   │   ├── avon2.png
+│   │   │   ├── avon.png
+│   │   │   ├── avon-video.mp4
+│   │   │   ├── cat.png
+│   │   │   ├── dante1.png
+│   │   │   ├── dante.png
+│   │   │   ├── dante-video.mp4
+│   │   │   ├── delfina1.png
+│   │   │   ├── delfina2.png
+│   │   │   ├── delfina3.mp4
+│   │   │   ├── delfina.png
+│   │   │   ├── ducha-video.mp4
+│   │   │   ├── edus2.png
+│   │   │   ├── edus3.png
+│   │   │   ├── edus.png
+│   │   │   ├── holder1.png
+│   │   │   ├── holder2.png
+│   │   │   ├── navidad1.png
+│   │   │   ├── navidad2.png
+│   │   │   ├── navidad.png
+│   │   │   ├── navidad-video.mp4
+│   │   │   ├── noel1.png
+│   │   │   ├── noel.png
+│   │   │   ├── noel-video.mp4
+│   │   │   ├── paddle1.png
+│   │   │   ├── paddle2.png
+│   │   │   ├── paddle3.png
+│   │   │   ├── paddle.png
+│   │   │   ├── river1.png
+│   │   │   ├── river2.png
+│   │   │   ├── river.png
+│   │   │   ├── rufina1.png
+│   │   │   ├── rufina2.png
+│   │   │   ├── rufina3.png
+│   │   │   ├── rufina.png
+│   │   │   ├── star2.png
+│   │   │   ├── star.png
+│   │   │   ├── star-video.mp4
+│   │   │   ├── station1.jpeg
+│   │   │   ├── station2.jpeg
+│   │   │   ├── station.jpeg
+│   │   │   ├── station-video.mp4
+│   │   │   ├── stumble1.png
+│   │   │   ├── stumble.png
+│   │   │   ├── vero1.jpg
+│   │   │   ├── vero2.jpg
+│   │   │   └── vero.jpg
+│   │   ├── llaveros
+│   │   │   ├── clubes-boca.png
+│   │   │   ├── clubes-nob.png
+│   │   │   ├── clubes-rc.png
+│   │   │   ├── clubes-river.png
+│   │   │   ├── clubes-video.mp4
+│   │   │   ├── contacto-imagen.png
+│   │   │   ├── disney3.png
+│   │   │   ├── flork1.png
+│   │   │   ├── flork-arg.png
+│   │   │   ├── flork-love.png
+│   │   │   ├── imagen1.png
+│   │   │   ├── imagen2.jpg
+│   │   │   ├── imagen3.png
+│   │   │   ├── marioWorld2.png
+│   │   │   ├── marioWorld.png
+│   │   │   ├── mickey2.png
+│   │   │   ├── mickey.png
+│   │   │   ├── minecraft.png
+│   │   │   ├── minion2.png
+│   │   │   ├── minion.png
+│   │   │   └── minion-video.mp4
+│   │   └── logo
+│   │       ├── 3d.webp
+│   │       ├── logo.png
+│   │       ├── mercado-shops.png
+│   │       ├── whatsapp.png
+│   │       └── whatsapp.svg
+│   ├── index.html
+│   ├── index.xml
+│   ├── js
+│   │   ├── menu.js
+│   │   └── menu.txt
+│   ├── llaveros
+│   │   ├── clubes
+│   │   │   ├── boca
+│   │   │   │   └── index.html
+│   │   │   ├── index.html
+│   │   │   ├── nob
+│   │   │   │   └── index.html
+│   │   │   ├── rc
+│   │   │   │   └── index.html
+│   │   │   └── rp
+│   │   │       └── index.html
+│   │   ├── disney
+│   │   │   └── index.html
+│   │   ├── flork
+│   │   │   └── index.html
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   ├── mario
+│   │   │   └── index.html
+│   │   ├── mickey
+│   │   │   └── index.html
+│   │   ├── minecraft
+│   │   │   └── index.html
+│   │   └── minion
+│   │       └── index.html
+│   ├── shop
+│   │   └── index.html
+│   └── sitemap.xml
+├── estructura.txt
+├── .gitignore
+├── .gitmodules
+├── .hugo_build.lock
+├── hugo.toml
+├── i18n
+├── layouts
+│   ├── _default
+│   │   ├── baseof.html
+│   │   └── single.html
+│   ├── partials
+│   │   ├── category-selector.html
+│   │   ├── head.html
+│   │   └── sidebar.html
+│   ├── shop
+│   │   ├── ofertas
+│   │   │   └── single.html
+│   │   └── single.html
+│   └── shortcodes
+│       ├── icono.html
+│       ├── imagen.html
+│       └── video.html
+├── static
+│   ├── css
+│   │   ├── shop.css
+│   │   └── style.css
+│   ├── imagen
+│   │   ├── fondo
+│   │   │   ├── body.jpg
+│   │   │   ├── fondo-shop.jpeg
+│   │   │   └── sidebar.png
+│   │   ├── fotos
+│   │   │   ├── alex.png
+│   │   │   ├── avon2.png
+│   │   │   ├── avon.png
+│   │   │   ├── avon-video.mp4
+│   │   │   ├── cat.png
+│   │   │   ├── dante1.png
+│   │   │   ├── dante.png
+│   │   │   ├── dante-video.mp4
+│   │   │   ├── delfina1.png
+│   │   │   ├── delfina2.png
+│   │   │   ├── delfina3.mp4
+│   │   │   ├── delfina.png
+│   │   │   ├── ducha-video.mp4
+│   │   │   ├── edus2.png
+│   │   │   ├── edus3.png
+│   │   │   ├── edus.png
+│   │   │   ├── holder1.png
+│   │   │   ├── holder2.png
+│   │   │   ├── navidad1.png
+│   │   │   ├── navidad2.png
+│   │   │   ├── navidad.png
+│   │   │   ├── navidad-video.mp4
+│   │   │   ├── noel1.png
+│   │   │   ├── noel.png
+│   │   │   ├── noel-video.mp4
+│   │   │   ├── paddle1.png
+│   │   │   ├── paddle2.png
+│   │   │   ├── paddle3.png
+│   │   │   ├── paddle.png
+│   │   │   ├── river1.png
+│   │   │   ├── river2.png
+│   │   │   ├── river.png
+│   │   │   ├── rufina1.png
+│   │   │   ├── rufina2.png
+│   │   │   ├── rufina3.png
+│   │   │   ├── rufina.png
+│   │   │   ├── star2.png
+│   │   │   ├── star.png
+│   │   │   ├── star-video.mp4
+│   │   │   ├── station1.jpeg
+│   │   │   ├── station2.jpeg
+│   │   │   ├── station.jpeg
+│   │   │   ├── station-video.mp4
+│   │   │   ├── stumble1.png
+│   │   │   ├── stumble.png
+│   │   │   ├── vero1.jpg
+│   │   │   ├── vero2.jpg
+│   │   │   └── vero.jpg
+│   │   ├── llaveros
+│   │   │   ├── clubes-boca.png
+│   │   │   ├── clubes-nob.png
+│   │   │   ├── clubes-rc.png
+│   │   │   ├── clubes-river.png
+│   │   │   ├── clubes-video.mp4
+│   │   │   ├── contacto-imagen.png
+│   │   │   ├── disney3.png
+│   │   │   ├── flork1.png
+│   │   │   ├── flork-arg.png
+│   │   │   ├── flork-love.png
+│   │   │   ├── imagen1.png
+│   │   │   ├── imagen2.jpg
+│   │   │   ├── imagen3.png
+│   │   │   ├── marioWorld2.png
+│   │   │   ├── marioWorld.png
+│   │   │   ├── mickey2.png
+│   │   │   ├── mickey.png
+│   │   │   ├── minecraft.png
+│   │   │   ├── minion2.png
+│   │   │   ├── minion.png
+│   │   │   └── minion-video.mp4
+│   │   └── logo
+│   │       ├── 3d.webp
+│   │       ├── logo.png
+│   │       ├── mercado-shops.png
+│   │       ├── whatsapp.png
+│   │       └── whatsapp.svg
+│   └── js
+│       ├── menu.js
+│       └── menu.txt
+└── themes
+    └── alpha-theme
+        ├── archetypes
+        │   └── default.md
+        ├── CHANGELOG.md
+        ├── go.mod
+        ├── images
+        │   ├── screenshot.png
+        │   └── tn.png
+        ├── layouts
+        │   ├── 404.html
+        │   ├── _default
+        │   │   ├── baseof.html
+        │   │   ├── list.html
+        │   │   └── single.html
+        │   ├── index.html
+        │   └── partials
+        │       ├── head_fonts.html
+        │       ├── head.html
+        │       ├── hook_head_end.html
+        │       └── sidebar.html
+        ├── LICENSE.md
+        ├── README.md
+        ├── static
+        │   ├── apple-touch-icon-144-precomposed.png
+        │   ├── css
+        │   │   ├── hyde.css
+        │   │   ├── poole.css
+        │   │   ├── print.css
+        │   │   └── syntax.css
+        │   └── favicon.png
+        └── theme.toml
+
+76 directories, 281 files

@@ -1,0 +1,16 @@
+<!doctype html><html lang=es><head><meta charset=UTF-8><title>Shop Alpha 3D</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/alpha.impresiones/css/shop.css><link href=https://unpkg.com/aos@2.3.1/dist/aos.css rel=stylesheet></head><body><div class=banner-img><a href=/alpha.impresiones/><img src=/alpha.impresiones/imagen/logo/logo.png alt=shop class=banner-image style=width:60px>
+</a><img src=/alpha.impresiones/imagen/logo/3d.webp alt=shop class=banner-image style=width:60px>
+<img src=/alpha.impresiones/imagen/logo/mercado-shops.png alt=shop class=banner-image style=width:100px></div><div class=banner_shop><h1>Todos Los Productos</h1><p>Llaveros, Figuras Anime, Herramientas y más.</p></div><div class="category-wrapper container"><a class=btn href=/alpha.impresiones/shop/>All
+</a><a class=btn href=/alpha.impresiones/shop/souveniers>Souveniers
+</a><a class=btn href=/alpha.impresiones/shop/ofertas>Ofertas
+</a><a class=btn href=/alpha.impresiones/shop/decoraci%C3%B3n>Decoración
+</a><a class=btn href=/alpha.impresiones/shop/figuras>Figuras</a></div><div class=galeria id=productos><div class=card id=producto-1493333477><p>Cargando...</p></div><div class=card id=producto-1493721639><p>Cargando...</p></div><div class=card id=producto-1493721568><p>Cargando...</p></div><div class=card id=producto-1493721568><p>Cargando...</p></div><div class=card id=producto-1493333477><p>Cargando...</p></div><div class=card id=producto-1493333477><p>Cargando...</p></div><div class=card id=producto-1493333477><p>Cargando...</p></div></div><script>async function cargarProducto(e){try{const n=await fetch(`https://api.mercadolibre.com/items/MLA${e}`),t=await n.json();document.getElementById(`producto-${e}`).innerHTML=`
+      <div class="card">
+        <img src="${t.thumbnail}" alt="${t.title}">
+        <h3>${t.title}</h3>
+        <p>Precio: $${t.price}</p>
+        <a href="${t.permalink}" target="_blank">Comprar</a>
+      </div>
+    `}catch(t){document.getElementById(`producto-${e}`).innerHTML=`
+      <p>Error al cargar el producto.</p>
+    `,console.error("Error cargando producto",e,t)}}function cargarTodosLosProductos(){const e=["1493333477","1493721639","1493721568","1493721568","1493333477","1493333477","1493333477"];e.forEach(e=>{cargarProducto(e)})}cargarTodosLosProductos()</script><script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script><script>AOS.init()</script></body></html>
