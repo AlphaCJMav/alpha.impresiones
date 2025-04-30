@@ -1,6 +1,6 @@
 baseURL = 'https://alphacjmav.github.io/alpha.impresiones/'
 googleAnalytics = ""
-theme = "alpha-theme"
+theme = "hyde"
 publishDir = "docs"
 languageCode = 'es'
 title = 'Alpha Impresiones'
