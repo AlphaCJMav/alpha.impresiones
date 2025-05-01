@@ -1,4 +1,10 @@
 {{ define "main" }}
+<style>
+  html body::before {
+    filter: none !important;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,7 +25,8 @@
 </div>
 
 <div class="banner_shop">
-  <img src="{{ .Site.Params.oferta }}" alt="shop_oferta" style="width: 80px">
+    <h1>Todos tus Productos 3D</h1>
+  <p>Llaveros, Juguetes, Herramientas, Souveniers</p>
 </div>
 
 {{ partial "category-selector" . }}
