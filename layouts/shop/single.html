@@ -1,0 +1,82 @@
+{{ define "main" }}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ "css/shop.css" | relURL }}">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div class="banner-img">
+  <a href="{{ "/alpha.impresiones/shop/" | relURL }}">
+  <img src="{{ .Site.Params.logo }}" alt="shop" class="banner-image" style="width: 60px">
+  </a>
+  <img src="{{ .Site.Params.gif }}" alt="shop" class="banner-image" style="width: 60px">
+  <img src="{{ .Site.Params.shops }}" alt="shop" class="banner-image" style="width: 100px">
+</div>
+
+<div class="banner_shop">
+  <img src="{{ .Site.Params.oferta }}" alt="shop_oferta" style="width: 80px">
+</div>
+
+{{ partial "category-selector" . }}
+
+<div class="galeria" id="productos">
+  {{ if .Site.Data.productos }}
+  {{ range site.Data.productos.productos }}
+
+    <div class="card" id="producto-{{ .numero }}">
+      <p>Cargando...</p> <!-- Mensaje temporal -->
+    </div>
+  
+    {{ end }}
+  {{ end }}
+</div>
+
+<script>
+async function cargarProducto(numero) {
+  try {
+    const res = await fetch(`https://api.mercadolibre.com/items/MLA${numero}`);
+    const data = await res.json();
+
+    document.getElementById(`producto-${numero}`).innerHTML = `
+      <div class="card">
+        <img src="${data.thumbnail}" alt="${data.title}">
+        <h3>${data.title}</h3>
+        <p>Precio: $${data.price}</p>
+        <a href="${data.permalink}" target="_blank">Comprar</a>
+      </div>
+    `;
+  } catch (error) {
+    document.getElementById(`producto-${numero}`).innerHTML = `
+      <p>Error al cargar el producto.</p>
+    `;
+    console.error('Error cargando producto', numero, error);
+  }
+}
+
+function cargarTodosLosProductos() {
+  const productos = [
+    {{ range site.Data.productos.productos }}
+      "{{ .numero }}",
+    {{ end }}
+  ];
+
+  productos.forEach(numero => {
+    cargarProducto(numero);
+  });
+}
+
+cargarTodosLosProductos();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
+{{ end }}
