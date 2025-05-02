@@ -25,8 +25,8 @@
 </div>
 
 <div class="banner_shop">
-  <h1>Souveniers 🎁</h1>
-  <p>Encontraras agasajos para Cumpleaños, Bautismos y regalos.</p>
+  <h1>Jugueteria</h1>
+  <p>Naipes, Games, Juguetes</p>
 </div>
 
 {{ partial "category-selector" . }}
@@ -35,7 +35,7 @@
   {{ $productos := .Site.Data.productos_scrapt }}
   {{ if $productos }}
     {{ range $productos.productos }}
-      {{ if eq (lower .categoria) "souveniers" }}
+      {{ if eq (lower .categoria) "jugueteria" }}
       <div class="card" id="producto-{{ .id }}">
         <img src="{{ .imagen | safeURL }}" alt="{{ .nombre }}">
         <h3>{{ .nombre }}</h3>

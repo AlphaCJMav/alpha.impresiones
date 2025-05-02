@@ -25,8 +25,8 @@ oferta = "/alpha.impresiones/imagen/logo/ofertas.png"
   slug = "ofertas"
 
 [[params.categorias]]
-  titulo = "Decoración"
-  slug = "decoracion"
+  titulo = "Jugueteria"
+  slug = "jugueteria"
 
 [[params.categorias]]
   titulo = "Figuras"

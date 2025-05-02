@@ -1,35 +1,25 @@
 [[productos]]
 nombre = "Flork"
-numero = 1493333477
-categoria = "Ofertas"
+id = 1493333477
+categoria = "Souveniers"
 
 
 [[productos]]
 nombre = "Minion"
-numero = 1493721639
+id = 1493721639
 categoria = "Souveniers"
 
 [[productos]]
-nombre = "Flork1"
-numero = 1493721568
+nombre = "Pesebre Iman"
+id = 1494346771
 categoria = "Souveniers"
 
 [[productos]]
-nombre = "Flork2"
-numero = 1493721568
+nombre = "Llavero Margarita"
+id = 1494301817
 categoria = "Souveniers"
 
 [[productos]]
-nombre = "Flork2"
-numero = 1493333477
-categoria = "Ofertas"
-
-[[productos]]
-nombre = "Flork3"
-numero = 1493333477
-categoria = "Ofertas"
-
-[[productos]]
-nombre = "Flork"
-numero = 1493333477
-categoria = "Ofertas"
+nombre = "Porta Cartas UNO"
+id = 1494360565
+categoria = "jugueteria"

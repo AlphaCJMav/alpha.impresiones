@@ -9,7 +9,6 @@
         background-size: cover;
         min-height: 100vh;
       }
-
     .galeria {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -33,9 +32,8 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+        width: 300px;
+        height: auto;
     }
     .card h3 {
       margin: 1rem 0 0.5rem 0;
@@ -156,3 +154,44 @@
   background: #FFD700;
   border-radius: 5px 0 0 5px;
 }
+
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .card a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .banner_shop {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .banner_shop h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner_shop img {
+    width: 60px;
+  }
+
