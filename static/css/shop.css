@@ -159,6 +159,10 @@
 }
 
 @media (max-width: 768px) {
+  body {
+    background-image: url('/alpha.impresiones/imagen/fondo/fondo-shop_media.jpeg');
+
+  }
   .galeria {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     padding: 1rem;
