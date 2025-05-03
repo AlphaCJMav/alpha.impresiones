@@ -11,7 +11,7 @@ categoria = "Souveniers"
 
 [[productos]]
 nombre = "Pesebre Iman"
-id = 1494346771
+id = 2071586132
 categoria = "Souveniers"
 
 [[productos]]
@@ -23,3 +23,14 @@ categoria = "Souveniers"
 nombre = "Porta Cartas UNO"
 id = 1494360565
 categoria = "jugueteria"
+
+[[productos]]
+nombre = "Porta Cartas"
+id = 2071560032
+categoria = "jugueteria"
+
+[[productos]]
+nombre = "Soporte Placas PCB"
+id = 2071715948
+categoria = "Ofertas"
+
