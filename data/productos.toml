@@ -34,3 +34,12 @@ nombre = "Soporte Placas PCB"
 id = 2071715948
 categoria = "Ofertas"
 
+[[productos]]
+nombre = "Base Joystick PS4"
+id = 2071633744
+categoria = "Games"
+
+[[productos]]
+nombre = "Base Joystick Xbox-ONE"
+id = 2071774318
+categoria = "Games"

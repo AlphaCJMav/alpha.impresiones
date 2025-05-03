@@ -25,8 +25,8 @@
 </div>
 
 <div class="banner_shop">
-  <img src="{{ .Site.Params.oferta }}" alt="shop_oferta" style="width: 80px">
-  <p>Precios bajos, nivel Pro.</p>
+  <h1>Games 🎮</h1>
+  <p>Videogames, Personajes, Accesorios</p>
 </div>
 
 {{ partial "category-selector" . }}
@@ -35,7 +35,7 @@
   {{ $productos := .Site.Data.productos_scrapt }}
   {{ if $productos }}
     {{ range $productos.productos }}
-      {{ if eq (lower .categoria) "ofertas" }}
+      {{ if eq (lower .categoria) "games" }}
       <div class="card" id="producto-{{ .id }}">
         <img src="{{ .imagen | safeURL }}" alt="{{ .nombre }}">
         <h3>{{ .nombre }}</h3>

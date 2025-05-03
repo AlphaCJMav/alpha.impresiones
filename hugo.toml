@@ -29,8 +29,12 @@ oferta = "/alpha.impresiones/imagen/logo/ofertas.png"
   slug = "jugueteria"
 
 [[params.categorias]]
-  titulo = "Figuras"
-  slug = "figuras"
+  titulo = "Games"
+  slug = "games"
+
+[[params.categorias]]
+  titulo = "Kids"
+  slug = "kids"
 
 
 
