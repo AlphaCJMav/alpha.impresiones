@@ -43,3 +43,18 @@ categoria = "Games"
 nombre = "Base Joystick Xbox-ONE"
 id = 2071774318
 categoria = "Games"
+
+[[productos]]
+nombre = "Base Joystick Pared PS4"
+id = 2072032732
+categoria = "Games"
+
+[[productos]]
+nombre = "Ears Bunny 3D"
+id = 2072315766
+categoria = "Kids"
+
+[[productos]]
+nombre = "Exo-Suit Porta Celular"
+id = 1494968079
+categoria = ["Ofertas", "Games"]

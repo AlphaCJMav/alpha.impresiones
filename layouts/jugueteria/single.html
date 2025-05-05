@@ -35,14 +35,19 @@
   {{ $productos := .Site.Data.productos_scrapt }}
   {{ if $productos }}
     {{ range $productos.productos }}
-      {{ if eq (lower .categoria) "jugueteria" }}
-      <div class="card" id="producto-{{ .id }}">
-        <img src="{{ .imagen | safeURL }}" alt="{{ .nombre }}">
-        <h3>{{ .nombre }}</h3>
-        <p>Precio: ${{ .precio }}</p>
-        <a href="{{ .enlace }}" target="_blank">Ver en MercadoLibre</a>
-        <p>Categoría: {{ .categoria }}</p>
-      </div>
+      {{ $categorias := .categoria }}
+      {{ if not (reflect.IsSlice $categorias) }}
+        {{ $categorias = slice $categorias }}
+      {{ end }}
+      {{ $categorias_lower := apply $categorias "lower" "." }}
+      {{ if in $categorias_lower "jugueteria" }}
+        <div class="card" id="producto-{{ .id }}">
+          <img src="{{ .imagen | safeURL }}" alt="{{ .nombre }}">
+          <h3>{{ .nombre }}</h3>
+          <p>Precio: ${{ .precio }}</p>
+          <a href="{{ .enlace }}" target="_blank">Ver en MercadoLibre</a>
+          <p>Categorías: {{ delimit $categorias ", " }}</p>
+        </div>
       {{ end }}
     {{ end }}
   {{ else }}
