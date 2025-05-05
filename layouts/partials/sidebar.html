@@ -14,11 +14,13 @@
 
     <nav>
       <ul class="sidebar-nav">
+         <div class="tienda-logo-banner">
         <li><a href="{{ "shop/" | relURL }}">
-          <p>Tienda</p>
+            <p>Tienda</p>
             <img src="{{ .Site.Params.shops }}" alt="Shops" style="height: 50px;">
             </a>
         </li>
+      </div>
         <li><a href="{{ .Site.BaseURL }}">Últimos Trabajos</a></li>
         {{ range .Site.Menus.main -}}
           <li class="menu-item">

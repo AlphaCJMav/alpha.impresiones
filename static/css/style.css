@@ -72,6 +72,22 @@ h1, h2, h3 {
 .sidebar-about h1{
     font-size: 2rem;
 }
+.tienda-logo-banner a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none; /* opcional, si no querés subrayado */
+  gap: 5px;
+}
+.tienda-logo-banner {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+}
+
+.tienda-logo-banner p {
+  font-weight: bold; /* negrita */
+  color: #FFD700;
+}
+
 .whatsapp-icon {
     width: 5%;
     height: 5%;
