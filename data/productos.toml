@@ -58,3 +58,18 @@ categoria = "Kids"
 nombre = "Exo-Suit Porta Celular"
 id = 1494968079
 categoria = ["Ofertas", "Games"]
+
+[[productos]]
+nombre = "Kit Aviones Epoca"
+id = 1495579895
+categoria = ["Kids", "Games"]
+
+[[productos]]
+nombre = "Kit Aviones ARMAR x 6 Kits"
+id = 1495657897
+categoria = ["Kids", "Games"]
+
+[[productos]]
+nombre = "Telar para Armar y Divertirte"
+id = 1495671053
+categoria = ["Kids", "Games"]
