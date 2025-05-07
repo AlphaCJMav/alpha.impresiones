@@ -15,6 +15,6 @@ Muchas Gracias.
 **Mail:** [alphamaverickteam@gmail.com](mailto:alphamaverickteam@gmail.com)
 
 **WhatsApp:** 
-[3412113258](https://wa.me/3412113258)
+[3412113258](https://wa.me/3417562278)
 
 {{< imagen src="/logo/logo.png" alt="logoAlpha">}}
