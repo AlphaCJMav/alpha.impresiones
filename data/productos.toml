@@ -73,3 +73,8 @@ categoria = ["Kids", "Games"]
 nombre = "Telar para Armar y Divertirte"
 id = 1495671053
 categoria = ["Kids", "Games"]
+
+[[productos]]
+nombre = "Porta Celular BOCA"
+id = 2081662354
+categoria = ["Ofertas", "Games"]
