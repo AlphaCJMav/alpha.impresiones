@@ -79,3 +79,8 @@ nombre = "Porta Celular BOCA"
 id = 2081662354
 categoria = ["Ofertas", "Games"]
 
+[[productos]]
+nombre = "Funko POP! Soporte Pared"
+id = 2086826352
+categoria = ["Ofertas", "Kids"]
+
