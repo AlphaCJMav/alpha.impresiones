@@ -1,4 +1,17 @@
 {{ partial "head.html" . }}
+
+<link rel="stylesheet" href="{{ "css/popup.css" | relURL }}">
+
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <a href="/alpha.impresiones/ofertas">
+      <img src="{{ .Site.Params.propaganda }}" alt="Oferta escritorio" class="img-desktop" /> 
+      <img src="{{ .Site.Params.propagandaMovil }}" alt="Oferta escritorio" class="img-mobile" />
+    </a>
+  </div>
+</div>
+
   <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
   {{ partial "sidebar.html" . }}
     <main class="content container">
@@ -9,6 +22,22 @@
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/menu.js"></script>
+<script>
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  // Opcional: mostrarlo solo una vez por sesión
+  window.onload = function() {
+    if (!sessionStorage.getItem('popupShown')) {
+      document.getElementById('popup').style.display = 'flex';
+      sessionStorage.setItem('popupShown', 'true');
+    } else {
+      document.getElementById('popup').style.display = 'none';
+    }
+  };
+</script>
+
   </body>
 </html>
 >

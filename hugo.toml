@@ -15,6 +15,8 @@ logo = "/alpha.impresiones/imagen/logo/logo.png"
 gif = "/alpha.impresiones/imagen/logo/3d.webp"
 shops = "/alpha.impresiones/imagen/logo/mercado-shops.png"
 oferta = "/alpha.impresiones/imagen/logo/ofertas.png"
+propaganda = "/alpha.impresiones/imagen/propaganda.png"
+propagandaMovil = "/alpha.impresiones/imagen/propaganda-movil.png"
 
 [[params.categorias]]
   titulo = "Souveniers"
