@@ -22,20 +22,45 @@
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/menu.js"></script>
+
 <script>
   function closePopup() {
     document.getElementById('popup').style.display = 'none';
   }
 
-  // Opcional: mostrarlo solo una vez por sesión
-  window.onload = function() {
-    if (!sessionStorage.getItem('popupShown')) {
+  // Devuelve la fecha actual como "YYYY-MM-DD"
+  function getTodayString() {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+
+  function shouldShowPopup() {
+    const lastShown = localStorage.getItem('popupLastShownDate');
+    const today = getTodayString();
+    return lastShown !== today;
+  }
+
+  function isRootPage() {
+    const url = window.location.href;
+    return (
+      url === 'https://alphacjmav.github.io/alpha.impresiones/' ||
+      url === 'https://alphacjmav.github.io/alpha.impresiones'
+    );
+  }
+
+  function showPopupIfNeeded() {
+    if (isRootPage() && shouldShowPopup()) {
       document.getElementById('popup').style.display = 'flex';
-      sessionStorage.setItem('popupShown', 'true');
+      localStorage.setItem('popupLastShownDate', getTodayString());
     } else {
       document.getElementById('popup').style.display = 'none';
     }
-  };
+  }
+
+  window.addEventListener('load', showPopupIfNeeded);
 </script>
 
   </body>

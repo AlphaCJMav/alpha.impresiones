@@ -8,3 +8,4 @@ date = 2025-04-29T12:30:17-03:00
 
 {{< imagen src="fotos/funko.png" alt="funko_POPS" caption="funko_POPS">}}
 {{< imagen src="fotos/funko1.png" alt="funko_POPS" caption="funko_POPS">}}
+{{< imagen src="fotos/funko2.png" alt="funko_POPS" caption="funko_POPS">}}
