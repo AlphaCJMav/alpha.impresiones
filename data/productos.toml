@@ -89,5 +89,8 @@ nombre = "PS5 Stand"
 id = 1500052171
 categoria = ["Ofertas", "Games"]
 
-
+[[productos]]
+nombre = "Leo The TRUCK"
+id = 2124064286
+categoria = ["Ofertas", "Kids"]
 

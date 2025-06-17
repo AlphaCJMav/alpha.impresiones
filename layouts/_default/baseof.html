@@ -2,25 +2,32 @@
 
 <link rel="stylesheet" href="{{ "css/popup.css" | relURL }}">
 
-<div id="popup" class="popup-overlay">
+<!-- Botón flotante siempre visible -->
+<div id="floating-button" class="floating-button" onclick="openPopup()">
+  Mirá Nuestras Ofertas 🎉
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popup-overlay" style="display: none;">
   <div class="popup-content">
     <span class="close-btn" onclick="closePopup()">×</span>
     <a href="/alpha.impresiones/ofertas">
-      <img src="{{ .Site.Params.propaganda }}" alt="Oferta escritorio" class="img-desktop" /> 
-      <img src="{{ .Site.Params.propagandaMovil }}" alt="Oferta escritorio" class="img-mobile" />
+      <img src="{{ .Site.Params.propaganda }}" alt="Oferta escritorio" class="img-desktop" />
+      <img src="{{ .Site.Params.propagandaMovil }}" alt="Oferta móvil" class="img-mobile" />
     </a>
   </div>
 </div>
 
-  <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+<body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
   {{ partial "sidebar.html" . }}
-    <main class="content container">
+  <main class="content container">
     {{ block "main" . -}}{{- end }}
-    </main>
+  </main>
 
-    {{ if ne hugo.Environment "development"  }}
-      {{ template "_internal/google_analytics.html" . }}
-    {{ end }}
+  {{ if ne hugo.Environment "development" }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
+
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/menu.js"></script>
 
 <script>
@@ -28,41 +35,22 @@
     document.getElementById('popup').style.display = 'none';
   }
 
-  // Devuelve la fecha actual como "YYYY-MM-DD"
-  function getTodayString() {
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, '0');
-    const day = String(today.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
+  function openPopup() {
+    document.getElementById('popup').style.display = 'flex';
+  }
+    // Animación automática cada 10 minutos
+  function startButtonPulse() {
+    const button = document.getElementById('floating-button');
+    setInterval(() => {
+      button.classList.add('animate');
+      setTimeout(() => {
+        button.classList.remove('animate');
+      }, 1000); // Dura lo mismo que la animación (1s)
+    }, 300000); // 300000 ms = 5 minutos
   }
 
-  function shouldShowPopup() {
-    const lastShown = localStorage.getItem('popupLastShownDate');
-    const today = getTodayString();
-    return lastShown !== today;
-  }
-
-  function isRootPage() {
-    const url = window.location.href;
-    return (
-      url === 'https://alphacjmav.github.io/alpha.impresiones/' ||
-      url === 'https://alphacjmav.github.io/alpha.impresiones'
-    );
-  }
-
-  function showPopupIfNeeded() {
-    if (isRootPage() && shouldShowPopup()) {
-      document.getElementById('popup').style.display = 'flex';
-      localStorage.setItem('popupLastShownDate', getTodayString());
-    } else {
-      document.getElementById('popup').style.display = 'none';
-    }
-  }
-
-  window.addEventListener('load', showPopupIfNeeded);
+  window.addEventListener('load', startButtonPulse);
 </script>
 
-  </body>
+</body>
 </html>
->
