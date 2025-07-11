@@ -31,7 +31,7 @@ categoria = "jugueteria"
 
 [[productos]]
 nombre = "Soporte Placas PCB"
-id = 2071715948
+id = 2171827358
 categoria = "Ofertas"
 
 [[productos]]
@@ -41,12 +41,12 @@ categoria = "Games"
 
 [[productos]]
 nombre = "Base Joystick Xbox-ONE"
-id = 2071774318
+id = 2171866358
 categoria = "Games"
 
 [[productos]]
 nombre = "Base Joystick Pared PS4"
-id = 2072032732
+id = 2171853328
 categoria = "Games"
 
 [[productos]]
@@ -85,7 +85,7 @@ id = 2088711006
 categoria = ["Ofertas", "Kids"]
 
 [[productos]]
-nombre = "PS5 Stand" 
+nombre = "PS5 Stand"
 id = 1500052171
 categoria = ["Ofertas", "Games"]
 
@@ -93,4 +93,3 @@ categoria = ["Ofertas", "Games"]
 nombre = "Leo The TRUCK"
 id = 2124064286
 categoria = ["Ofertas", "Kids"]
-
