@@ -9,4 +9,4 @@ date = 2025-06-17T18:57:05-03:00
 {{< imagen src="fotos/leo_portada.png" alt="leo_the_truck" caption="leo_the_truck">}}
 {{< imagen src="fotos/leo_1.png" alt="leo_the_truck" caption="leo_the_truck">}}
 {{< imagen src="fotos/leo_2.png" alt="leo_the_truck" caption="leo_the_truck">}}
-{{< video src="fotos/leo_video.mp4">}}
+{{< video src="fotos/leo_video.mp4" width="70%">}}
