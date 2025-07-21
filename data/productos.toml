@@ -93,3 +93,8 @@ categoria = ["Ofertas", "Games"]
 nombre = "Leo The TRUCK"
 id = 2124064286
 categoria = ["Ofertas", "Kids"]
+
+[[productos]]
+nombre = "PortaCelular RACING F1 🏁"
+id = 2192879638
+categoria = ["Ofertas", "Games"]
