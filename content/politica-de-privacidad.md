@@ -9,3 +9,5 @@ Utilizamos servicios de terceros como Google AdSense, que pueden recopilar infor
 No compartimos tus datos personales con terceros sin tu consentimiento, excepto cuando sea requerido por ley.
 
 Si tienes dudas, contáctanos a [alphamaverickteam@gmail.com](mailto:tu-correo@ejemplo.com)
+
+{{< imagen src="/logo/logo.png" alt="logoAlpha" width="20%">}}

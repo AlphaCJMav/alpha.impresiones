@@ -1,16 +1,13 @@
-<!DOCTYPE html>
+
 <html lang="es">
-<head>
+  
   {{ partial "head.html" . }}
-  <link rel="stylesheet" href="{{ "css/popup.css" | relURL }}">
-</head>
+
 
 <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
 
-  <!-- Botón flotante SIEMPRE visible -->
   <div id="floating-button" class="floating-button" onclick="openPopup()">Mirá Nuestras Ofertas 🎉</div>
 
-  <!-- Popup -->
   <div id="popup" class="popup-overlay" style="display: none;">
     <div class="popup-content">
       <span class="close-btn" onclick="closePopup()">×</span>
@@ -33,7 +30,6 @@
   {{ end }}
 
   <script src="{{ .Site.BaseURL }}js/menu.js"></script>
-
   <script>
     function closePopup() {
       document.getElementById('popup').style.display = 'none';
