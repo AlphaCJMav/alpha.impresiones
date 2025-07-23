@@ -15,12 +15,16 @@
       <img src="{{ .Site.Params.propaganda }}" alt="Oferta escritorio" class="img-desktop" />
       <img src="{{ .Site.Params.propagandaMovil }}" alt="Oferta móvil" class="img-mobile" />
     </a>
+              <!-- Anuncio AdSense debajo del contenido -->
+  {{ partial "adsense.html" . }}
   </div>
 </div>
 
 <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
   {{ partial "sidebar.html" . }}
   <main class="content container">
+            <!-- Anuncio AdSense debajo del contenido -->
+  {{ partial "adsense.html" . }}
     {{ block "main" . -}}{{- end }}
   </main>
 
