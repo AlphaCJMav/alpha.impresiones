@@ -118,7 +118,6 @@ h1, h2, h3 {
 
 /* Asegurarse de que las imágenes sean responsivas */
 .img-fluid {
-  width: 50%;
   height: 50%;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
