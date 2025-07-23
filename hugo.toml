@@ -49,6 +49,13 @@ propagandaMovil = "/alpha.impresiones/imagen/propaganda-movil.png"
   url = "/contacto/"
   weight = 0
 
+  [[menu.main]]
+  identifier = "politica-de-privacidad"
+  name = "Politica de Privacidad"
+  title = "Politica de Privacidad"
+  url = "/politica-de-privacidad/"
+  weight = 9
+
 [[menu.main]]
   parent = "Modelos de Llaveros"
   identifier = "disney-moment"
