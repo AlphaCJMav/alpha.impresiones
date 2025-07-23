@@ -28,6 +28,8 @@
   <h1>Todos tus Productos 3D</h1>
   <p>Llaveros, Juguetes, Herramientas, Souvenirs</p>
 </div>
+        <!-- Anuncio AdSense debajo del contenido -->
+  {{ partial "adsense.html" . }}
 
 {{ partial "category-selector" . }}
 
@@ -54,7 +56,8 @@
 <script>
   AOS.init();
 </script>
-
+        <!-- Anuncio AdSense debajo del contenido -->
+  {{ partial "adsense.html" . }}
 </body>
 </html>
 {{ end }}
