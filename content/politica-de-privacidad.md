@@ -10,4 +10,4 @@ No compartimos tus datos personales con terceros sin tu consentimiento, excepto 
 
 Si tienes dudas, contáctanos a [alphamaverickteam@gmail.com](mailto:tu-correo@ejemplo.com)
 
-{{< imagen src="/logo/logo.png" alt="logoAlpha" width="20%">}}
+{{< imagen src="/logo/logo.png" alt="logoAlpha">}}
