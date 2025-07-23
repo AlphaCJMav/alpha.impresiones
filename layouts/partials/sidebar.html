@@ -39,4 +39,6 @@
 
     <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
   </div>
+      <!-- Anuncio AdSense debajo del contenido -->
+  {{ partial "adsense.html" . }}
 </aside>
