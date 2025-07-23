@@ -181,6 +181,36 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.social-bar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-bar a {
+  background-color: #25D366; /* WhatsApp */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+  width: 50px;
+  border-radius: 8px 0 0 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-bar a.tiktok {
+  background-color: #000000;
+}
+
+.social-bar a:hover {
+  transform: translateX(-10px);
+}
+
 
 
 
