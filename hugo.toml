@@ -1,7 +1,7 @@
 baseURL = "https://alphaimpresiones.pages.dev/"
 googleAnalytics = ""
 theme = "hyde"
-publishDir = "docs"
+publishDir = "public"
 languageCode = 'es'
 title = 'Alpha Impresiones'
 
@@ -11,12 +11,12 @@ categoria = "categorias"
 
 [params]
 description = "Portfolio Impresiones 3D"
-logo = "/alphaimpresiones.pages.dev/imagen/logo/logo.png"
-gif = "/alphaimpresiones.pages.dev/imagen/logo/3d.webp"
-shops = "/alphaimpresiones.pages.dev/imagen/logo/mercado-shops.png"
-oferta = "/alphaimpresiones.pages.dev/imagen/logo/ofertas.png"
-propaganda = "/alphaimpresiones.pages.dev/imagen/propaganda.png"
-propagandaMovil = "/alphaimpresiones.pages.dev/imagen/propaganda-movil.png"
+logo = "/imagen/logo/logo.png"
+gif = "/imagen/logo/3d.webp"
+shops = "/imagen/logo/mercado-shops.png"
+oferta = "/imagen/logo/ofertas.png"
+propaganda = "/imagen/propaganda.png"
+propagandaMovil = "/imagen/propaganda-movil.png"
 
 [[params.categorias]]
   titulo = "Souveniers"
