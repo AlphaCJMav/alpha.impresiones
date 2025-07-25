@@ -1,4 +1,4 @@
-baseURL = 'https://alphacjmav.github.io/alpha.impresiones/'
+baseURL = "https://alphaimpresiones.pages.dev/"
 googleAnalytics = ""
 theme = "hyde"
 publishDir = "docs"
