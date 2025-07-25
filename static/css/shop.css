@@ -2,7 +2,7 @@
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url('/alpha.impresiones/imagen/fondo/fondo-shop.jpeg');
+        background-image: url('/imagen/fondo/fondo-shop.jpeg');
         background-attachment: fixed;
         background-repeat: repeat;
         background-position: center;
@@ -160,7 +160,7 @@
 
 @media (max-width: 768px) {
   body {
-    background-image: url('/alpha.impresiones/imagen/fondo/fondo-shop_media.jpeg');
+    background-image: url('/imagen/fondo/fondo-shop_media.jpeg');
 
   }
   .galeria {
