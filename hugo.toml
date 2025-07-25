@@ -11,12 +11,12 @@ categoria = "categorias"
 
 [params]
 description = "Portfolio Impresiones 3D"
-logo = "/alpha.impresiones/imagen/logo/logo.png"
-gif = "/alpha.impresiones/imagen/logo/3d.webp"
-shops = "/alpha.impresiones/imagen/logo/mercado-shops.png"
-oferta = "/alpha.impresiones/imagen/logo/ofertas.png"
-propaganda = "/alpha.impresiones/imagen/propaganda.png"
-propagandaMovil = "/alpha.impresiones/imagen/propaganda-movil.png"
+logo = "/alphaimpresiones.pages.dev/imagen/logo/logo.png"
+gif = "/alphaimpresiones.pages.dev/imagen/logo/3d.webp"
+shops = "/alphaimpresiones.pages.dev/imagen/logo/mercado-shops.png"
+oferta = "/alphaimpresiones.pages.dev/imagen/logo/ofertas.png"
+propaganda = "/alphaimpresiones.pages.dev/imagen/propaganda.png"
+propagandaMovil = "/alphaimpresiones.pages.dev/imagen/propaganda-movil.png"
 
 [[params.categorias]]
   titulo = "Souveniers"
