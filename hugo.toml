@@ -17,6 +17,7 @@ shops = "/imagen/logo/mercado-shops.png"
 oferta = "/imagen/logo/ofertas.png"
 propaganda = "/imagen/propaganda.png"
 propagandaMovil = "/imagen/propaganda-movil.png"
+adsense_id = "ca-pub-1467437251743895"
 
 [[params.categorias]]
   titulo = "Souveniers"
