@@ -1,32 +1,32 @@
 [[productos]]
 nombre = "Flork"
-id = 1493333477
+id = 1538144629
 categoria = "Souveniers"
 
 
 [[productos]]
 nombre = "Minion"
-id = 2149437698
+id = 1538183215
 categoria = "Souveniers"
 
 [[productos]]
 nombre = "Pesebre Iman"
-id = 2071586132
+id = 2376745190
 categoria = "Souveniers"
 
 [[productos]]
 nombre = "Llavero Margarita"
-id = 1507855555
+id = 1538157627
 categoria = "Souveniers"
 
 [[productos]]
 nombre = "Porta Cartas UNO"
-id = 2150302406
+id = 1538105537
 categoria = "jugueteria"
 
 [[productos]]
 nombre = "Holder de Cartas"
-id = 1504344689
+id = 1538040685
 categoria = "jugueteria"
 
 [[productos]]
@@ -36,17 +36,17 @@ categoria = "Ofertas"
 
 [[productos]]
 nombre = "Base Joystick PS4"
-id = 2071633744
+id = 1538182969
 categoria = "Games"
 
 [[productos]]
 nombre = "Base Joystick Xbox-ONE"
-id = 2171866358
+id = 1538156905
 categoria = "Games"
 
 [[productos]]
 nombre = "Base Joystick Pared PS4"
-id = 2171853328
+id = 1538144121
 categoria = "Games"
 
 [[productos]]
@@ -97,4 +97,9 @@ categoria = ["Ofertas", "Kids"]
 [[productos]]
 nombre = "PortaCelular RACING F1 🏁"
 id = 2192879638
+categoria = ["Ofertas", "Games"]
+
+[[productos]]
+nombre = "GamePad Android PS4"
+id = 1538058311
 categoria = ["Ofertas", "Games"]
