@@ -5,10 +5,7 @@ date = 2025-01-15T17:52:32-03:00
 +++
 
   ## Contáctanos
-Para tu Cumpleaños, Bautismo o Eventos , te ofrecemos el souvenir de tu elección , mas Argolla llavero, 
-bolsa personalizada con etiqueta Full-Color. 
-{{< imagen src="llaveros/contacto-imagen.png">}}
-Por favor, sigue los enlances para comunicarte con nosotros y solicitar tu presupuesto.
+Por favor, sigue Nuestros enlances para comunicarte con nosotros y solicitar tu presupuesto.
 Muchas Gracias.
 
 

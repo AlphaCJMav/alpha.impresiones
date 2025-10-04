@@ -6,17 +6,59 @@
 
 <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
 
-  <div id="floating-button" class="floating-button" onclick="openPopup()">Mirá Nuestras Ofertas 🎉</div>
+<!-- Botón flotante de reseñas -->
+<div id="floating-button-reviews" class="floating-button" style="bottom: 60px; background-color:#f0731f;"
+     onclick="openPopupReviews()">⭐ Mirá nuestra reputación de Google</div>
 
-  <div id="popup" class="popup-overlay" style="display: none;">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">×</span>
-      <a href="/ofertas">
-        <img src="{{ .Site.Params.propaganda }}" alt="Oferta escritorio" class="img-desktop" />
-        <img src="{{ .Site.Params.propagandaMovil }}" alt="Oferta móvil" class="img-mobile" />
+<!-- Popup con el mapa de Google -->
+<div id="popup-reviews" class="popup-overlay" style="display: none;">
+  <div class="popup-content" style="max-width: 600px; position: relative;">
+    <span class="close-btn" onclick="closePopupReviews()">×</span>
+
+    <h3 style="text-align:center; margin-bottom:10px;">Nuestra Reputación en Google</h3>
+
+    <div style="position: relative; border-radius: 10px; overflow: hidden;">
+      <!-- Mapa embebido -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-58.3816!3d-34.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac99!2sAlpha%20Impresiones%203D!5e0!3m2!1ses!2sar!4v1728000000000!5m2!1ses!2sar"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <!-- Overlay clickeable que abre en otra pestaña -->
+      <a href="https://www.google.com/maps/place/Alpha.Impresiones.3D/@-32.9872184,-60.6430864,17z/data=!4m8!3m7!1s0x95b7ab00589b5c5d:0xf5f893fed805fbc!8m2!3d-32.9872184!4d-60.6405061!9m1!1b1!16s%2Fg%2F11w_w5yvmp?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+         target="_blank"
+         title="Ver reseñas en Google Maps"
+         style="position:absolute; top:0; left:0; width:100%; height:100%;
+                z-index:2; cursor:pointer;">
+      </a>
+    </div>
+
+    <div style="text-align:center; margin-top:10px;">
+      <a href="https://www.google.com/maps/place/Alpha.Impresiones.3D/@-32.9872184,-60.6430864,17z/data=!4m8!3m7!1s0x95b7ab00589b5c5d:0xf5f893fed805fbc!8m2!3d-32.9872184!4d-60.6405061!9m1!1b1!16s%2Fg%2F11w_w5yvmp?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+         target="_blank"
+         style="display:inline-block; background-color:#34A853; color:white;
+                padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">
+         ⭐ Ver reseñas completas
       </a>
     </div>
   </div>
+</div>
+
+
+<script>
+  function openPopupReviews() {
+    document.getElementById('popup-reviews').style.display = 'flex';
+  }
+  function closePopupReviews() {
+    document.getElementById('popup-reviews').style.display = 'none';
+  }
+</script>
+
 
   {{ partial "sidebar.html" . }}
 
